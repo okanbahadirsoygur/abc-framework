@@ -15,6 +15,12 @@ require_once "abc/core/Controller.php";
 require_once "abc/core/Router.php";
 
 
+
+require_once "abc/library/Browser.php";
+require_once "abc/library/Server.php";
+require_once "abc/library/Random.php";
+
+
 $init = new Router();
 
 ?>
