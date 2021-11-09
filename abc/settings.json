@@ -1,0 +1,18 @@
+{
+  "SITE_NAME": "abc Framework",
+  "SITE_URL": "http://abc2.local:8888/",
+  "VERSION": "2.0.0",
+  "HOME_URL": "home/welcome",
+
+  "ERROR_REPORTING": "0",
+
+  "DATABASE_ENABLE": "1",
+  "HOSTNAME": "localhost",
+  "DATABASE": "exampledb",
+  "PORT": "3306",
+  "USER":"root",
+  "PASSWORD": "root"
+
+
+
+}
