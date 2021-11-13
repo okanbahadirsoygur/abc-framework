@@ -19,6 +19,7 @@ define("HOME_URL", $settings["HOME_URL"]);
 define("VERSION", $settings["VERSION"]);
 define("ERROR_REPORTING", $settings["ERROR_REPORTING"]);
 define("DATABASE_ENABLE", $settings["DATABASE_ENABLE"]);
+define("DATABASE_PDO_TYPE", $settings["DATABASE_PDO_TYPE"]);
 define("HOSTNAME", $settings["HOSTNAME"]);
 define("DATABASE", $settings["DATABASE"]);
 define("PORT", $settings["PORT"]);

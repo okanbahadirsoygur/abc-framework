@@ -9,7 +9,7 @@ class Controller{
 
         require_once "Model/".$model.".php";
 
-        return $model;
+        return new $model;
 
     }
 

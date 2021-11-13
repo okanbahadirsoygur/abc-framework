@@ -2,13 +2,14 @@
   "SITE_NAME": "abc Framework",
   "SITE_URL": "http://abc2.local:8888/",
   "VERSION": "2.0.0",
-  "HOME_URL": "home/welcome",
+  "HOME_URL": "home",
 
   "ERROR_REPORTING": "0",
 
   "DATABASE_ENABLE": "1",
+  "DATABASE_PDO_TYPE": "mysql",
   "HOSTNAME": "localhost",
-  "DATABASE": "exampledb",
+  "DATABASE": "iot_ciftlik",
   "PORT": "3306",
   "USER":"root",
   "PASSWORD": "root"
