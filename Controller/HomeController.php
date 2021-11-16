@@ -6,11 +6,13 @@ class HomeController extends Controller {
     function default($deger){
 
 
-        echo "default controller page || abc Framework</br>";
+        $this->View("HomeController/Home","","Ana Sayfam","anasayfa");
+       echo "default controller page || abc Framework</br>";
 
-        $Deneme = $this->Model("Deneme");
 
-        var_export($Deneme->degergetir());
+        //$Deneme = $this->Model("Deneme");
+
+      //  var_export($Deneme->degergetir());
 
        // var_export($deger);
     }

@@ -4,7 +4,7 @@
   "VERSION": "2.0.0",
   "HOME_URL": "home",
 
-  "ERROR_REPORTING": "0",
+  "ERROR_REPORTING": "1",
 
   "DATABASE_ENABLE": "1",
   "DATABASE_PDO_TYPE": "mysql",

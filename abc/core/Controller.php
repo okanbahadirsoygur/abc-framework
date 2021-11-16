@@ -14,10 +14,15 @@ class Controller{
     }
 
 
-    public function View($view,$data=[]){
+    public function View($view,$data=[],$pageTitle="View",$description="abc Framework", $keywords="abc Framework"){
+
 
 
         if(file_exists("View/".$view.".view.php")){
+
+                //view'e html sayfa bilgisi tag'larını ekleyelim.(header,page title ...)
+                $html = new Html($pageTitle,$description,$keywords);
+
 
                 require_once "View/".$view.".view.php";
 
