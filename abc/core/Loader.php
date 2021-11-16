@@ -11,6 +11,7 @@
 require_once "abc/library/Publish.php";
 require_once "abc/core/Constants.php";
 require_once "abc/core/ErrorHandle.php";
+require_once "abc/library/Security.php";
 require_once "abc/core/Html.php";
 require_once "abc/core/Database.php";
 require_once "abc/core/Controller.php";
