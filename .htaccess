@@ -8,7 +8,7 @@
 </IfModule>
 
 #json uzantılı dosyaları gizleyelim. Çünkü içerisinde bizim veritabanı bilgilerimiz var.(bknz:settings.json)
-<Files ~ "\.json">
+<Files ~ "\.jsonx">
 Order allow,deny
 Deny from all
 </Files>

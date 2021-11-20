@@ -7,20 +7,27 @@ class HomeController extends Controller {
 
 
         $this->View("HomeController/Home","","Ana Sayfam","anasayfa");
-       echo "default controller page || abc Framework</br>";
+    //   echo "default controller page || abc Framework</br>";
 
-       echo Security::htmlJavascriptClear("<hr><h1>MERHABA</h1>");
+      // echo Security::htmlJavascriptClear("<hr><h1>MERHABA</h1>");
 
-        echo "</br>";
+      //  echo "</br>";
 
-        echo Security::sqlInjectionClear("select id, title from hayvanlar where id = \"12\";");
-
+      //  echo Security::sqlInjectionClear("select id, title from hayvanlar where id = \"12\";");
+       // echo "</br>";
 
         //$Deneme = $this->Model("Deneme");
 
       //  var_export($Deneme->degergetir());
 
        // var_export($deger);
+
+        if($_POST){
+
+
+      var_export( $this->FileUpload->upload("dosya","document"));
+
+        }//post
     }
 
     function blog($data=0){

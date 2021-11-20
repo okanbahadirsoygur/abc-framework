@@ -9,7 +9,7 @@
  *
 */
 
-$pure_json = file_get_contents("abc/settings.json");
+$pure_json = file_get_contents("abc/settings.jsonx");
 
 $settings = json_decode($pure_json, true);
 

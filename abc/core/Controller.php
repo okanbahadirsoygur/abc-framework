@@ -2,8 +2,14 @@
 
 class Controller{
 
+    public $FileUpload;
 
+    public function __construct()
+    {
 
+        $this->FileUpload = new FileUpload($_FILES);
+
+    }
 
     public function Model($model){
 
