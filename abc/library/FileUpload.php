@@ -21,7 +21,7 @@ class FileUpload{
     }
 
     private $img_types = ["jpeg","png","jpg"];
-    private $video_types = ["jpeg","png","jpg"];
+    private $video_types = ["mp4","mpeg","wav","mov","avi","divx","mpeg-4"];
     private $sound_types = ["mp3","ogg","aac","wav","flac","alac","dsd"];
     private $document_types = ["pdf","doc","docx","xls","xlsx","ppt","pptx","ods","odt","txt","html","csv","xml","json"];
     private $file_types = ["exe","app","apk","iso","zip","rar","7zip"];
@@ -33,20 +33,20 @@ class FileUpload{
     // Her type değeri wwwroot/uploads klasöründeki ilgili yere aktarılır.
     // Yüklenen dosyaların kendi isimlerinden sonra, çakışmaları önlemek için o anki sistem saati isminin başına eklenir.
     // Başarıyla yüklenen dosyalar için url bilgisi geriye döndürülür, başarısız olur ise hata ve açıklaması geriye döndürülür.
-     public  function upload($HtmlFileElementId,$type){
+     public  function upload($HtmlFileElementName,$type){
 
 
 
-        if(isset($this->FILE[$HtmlFileElementId])){
+        if(isset($this->FILE[$HtmlFileElementName])){
 
             $errors= array();
-            $file_name = $this->FILE[$HtmlFileElementId]['name'];
+            $file_name = $this->FILE[$HtmlFileElementName]['name'];
 
-            $file_size =$this->FILE[$HtmlFileElementId]['size'];
-            $file_tmp =$this->FILE[$HtmlFileElementId]['tmp_name'];
-            $file_type= $this->FILE[$HtmlFileElementId]['type'];
+            $file_size =$this->FILE[$HtmlFileElementName]['size'];
+            $file_tmp =$this->FILE[$HtmlFileElementName]['tmp_name'];
+            $file_type= $this->FILE[$HtmlFileElementName]['type'];
 
-            $array = explode('.', $this->FILE[$HtmlFileElementId]['name']);
+            $array = explode('.', $this->FILE[$HtmlFileElementName]['name']);
             $file_ext = strtolower(end($array));//yüklenen dosyanın uzantısını alalım.
 
 

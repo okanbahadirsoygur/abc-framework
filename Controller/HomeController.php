@@ -27,6 +27,7 @@ class HomeController extends Controller {
 
       var_export( $this->FileUpload->upload("dosya","document"));
 
+
         }//post
     }
 
