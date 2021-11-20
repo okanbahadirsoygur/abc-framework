@@ -3,7 +3,7 @@
 /*
  *  abc Framework v2
  *  Dosya sistemine, türlerine göre wwwroot/uploads klasörü altında dosya yüklemek için hazırlanmıştır.
- *  Static yapıda bir class'dır tanımlama yapılmadan direk kullanılabilir.
+ * 
  *  Created by Okan Bahadır Soygür
  *
 */
