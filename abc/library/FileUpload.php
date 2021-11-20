@@ -3,7 +3,7 @@
 /*
  *  abc Framework v2
  *  Dosya sistemine, türlerine göre wwwroot/uploads klasörü altında dosya yüklemek için hazırlanmıştır.
- * 
+ *
  *  Created by Okan Bahadır Soygür
  *
 */
@@ -29,10 +29,10 @@ class FileUpload{
 
     // type değerleri şunlardır;
     // img, document, sound, file, video
-    // Her type değeri için yukarıda izin verilen uzantılar vardır.Type değerleri için bleirtilen uzantılar haricinde yüklenmek istenen her dosya reddedilecektir.
+    // Her type değeri için yukarıda izin verilen uzantılar vardır.Type değerleri için belirtilen uzantılar haricinde yüklenmek istenen her dosya reddedilecektir.
     // Her type değeri wwwroot/uploads klasöründeki ilgili yere aktarılır.
-    // yüklenen dosyaların kendi isimlerinden sonra, çakışmaları önlemek için o anki sistem saati isminin sonuna eklenir.
-    // başarıyla yüklenen dosyalar için url bilgisi geriye döndürülür, başarısız olur ise hata ve açıklaması geriye döndürülür.
+    // Yüklenen dosyaların kendi isimlerinden sonra, çakışmaları önlemek için o anki sistem saati isminin başına eklenir.
+    // Başarıyla yüklenen dosyalar için url bilgisi geriye döndürülür, başarısız olur ise hata ve açıklaması geriye döndürülür.
      public  function upload($HtmlFileElementId,$type){
 
 
@@ -51,9 +51,6 @@ class FileUpload{
 
 
             //gelen dosya uzantısının bizim desteklediğimiz tiplerde olup olmadığını kontrol edelim.
-
-
-
             switch ($type){
 
 
