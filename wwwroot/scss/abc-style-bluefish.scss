@@ -1,0 +1,114 @@
+/*
+ *  abc Framework v2
+ *  abc Style Blue Fish
+ *
+ *  Created by Okan Bahadır Soygür
+ *
+*/
+@font-face {
+  font-family: saira;
+  src: url("../fonts/saira/saira.ttf");
+}
+
+$butonArkaplanRengi : #1b3f5d;
+$butonHoverArkaplanRengi : #2d5e8a;
+
+body{
+  font-family: saira;
+  font-size:16px;
+}
+
+input[type="button"],button,input[type="submit"]{
+  height: 45px;
+  border: 1px solid white;
+  color: white;
+  background: $butonArkaplanRengi;
+  font-family: saira;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0px;
+  min-width: 120px;
+
+  &:hover{
+    background:  $butonHoverArkaplanRengi;
+    border: 1px solid white;
+    color: white;
+  }
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+  height: 35px;
+  padding-left: 10px;
+  border: 1px solid $butonArkaplanRengi;
+  font-size: 14px;
+  font-family: saira;
+  color: black;
+}
+
+input[type="file"]{
+  border: 1px solid $butonArkaplanRengi;
+  padding: 20px;
+  font-family: saira;
+  color: black;
+
+}
+
+textarea{
+  height: 100px;
+  padding: 10px;
+  border: 1px solid $butonArkaplanRengi;
+  font-size: 14px;
+  font-family: saira;
+  color: black;
+}
+
+
+
+label{
+  font-size: 16px;
+  font-family: saira;
+  color: black;
+
+  b{
+    font-size: 18px;
+    font-family: saira;
+    font-weight: bold;
+    color: black;
+  }
+
+  i{
+    font-size: 16px;
+    font-family: saira;
+    color: black;
+  }
+}
+
+b{
+  font-size: 18px;
+  font-family: saira;
+  font-weight: bold;
+  color: black;
+}
+
+i{
+  font-size: 16px;
+  font-family: saira;
+  color: black;
+}
+
+hr{
+  border: 1px solid $butonArkaplanRengi;
+  opacity: 1;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: saira;
+  color: black;
+}
+
+
+
+
+

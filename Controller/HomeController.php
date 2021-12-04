@@ -25,7 +25,7 @@ class HomeController extends Controller {
         if($_POST){
 
 
-      var_export( $this->FileUpload->upload("dosya","document"));
+        var_export( $this->FileUpload->upload("dosya","document"));
 
 
         }//post

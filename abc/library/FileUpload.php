@@ -46,6 +46,8 @@ class FileUpload{
             $file_tmp =$this->FILE[$HtmlFileElementName]['tmp_name'];
             $file_type= $this->FILE[$HtmlFileElementName]['type'];
 
+
+
             $array = explode('.', $this->FILE[$HtmlFileElementName]['name']);
             $file_ext = strtolower(end($array));//yüklenen dosyanın uzantısını alalım.
 
